@@ -1,0 +1,93 @@
+fips,rucc_code,rucc_label,is_metro,is_rural,data_source,data_year
+18001,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18003,2.0,Metro: 250K–1M,True,False,USDA ERS 2023 RUCC,2023
+18005,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18007,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18009,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18011,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18013,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18015,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18017,4.0,"Nonmetro: Urban 20K+, adj to metro",False,False,USDA ERS 2023 RUCC,2023
+18019,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18021,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18023,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18025,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18027,7.0,"Nonmetro: Urban 2.5K–20K, not adj",False,True,USDA ERS 2023 RUCC,2023
+18029,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18031,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18033,4.0,"Nonmetro: Urban 20K+, adj to metro",False,False,USDA ERS 2023 RUCC,2023
+18035,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18037,5.0,"Nonmetro: Urban 20K+, not adj",False,False,USDA ERS 2023 RUCC,2023
+18039,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18041,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18043,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18045,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18047,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18049,7.0,"Nonmetro: Urban 2.5K–20K, not adj",False,True,USDA ERS 2023 RUCC,2023
+18051,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18053,4.0,"Nonmetro: Urban 20K+, adj to metro",False,False,USDA ERS 2023 RUCC,2023
+18055,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18057,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18059,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18061,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18063,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18065,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18067,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18069,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18071,4.0,"Nonmetro: Urban 20K+, adj to metro",False,False,USDA ERS 2023 RUCC,2023
+18073,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18075,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18077,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18079,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18081,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18083,7.0,"Nonmetro: Urban 2.5K–20K, not adj",False,True,USDA ERS 2023 RUCC,2023
+18085,4.0,"Nonmetro: Urban 20K+, adj to metro",False,False,USDA ERS 2023 RUCC,2023
+18087,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18089,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18091,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18093,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18095,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18097,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18099,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18101,9.0,"Nonmetro: <2.5K, not adj",False,True,USDA ERS 2023 RUCC,2023
+18103,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18105,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18107,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18109,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18111,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18113,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18115,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18117,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18119,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18121,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18123,7.0,"Nonmetro: Urban 2.5K–20K, not adj",False,True,USDA ERS 2023 RUCC,2023
+18125,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18127,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18129,2.0,Metro: 250K–1M,True,False,USDA ERS 2023 RUCC,2023
+18131,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18133,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18135,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18137,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18139,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18141,2.0,Metro: 250K–1M,True,False,USDA ERS 2023 RUCC,2023
+18143,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18145,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18147,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18149,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18151,7.0,"Nonmetro: Urban 2.5K–20K, not adj",False,True,USDA ERS 2023 RUCC,2023
+18153,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18155,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18157,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18159,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18161,8.0,"Nonmetro: <2.5K, adj",False,True,USDA ERS 2023 RUCC,2023
+18163,2.0,Metro: 250K–1M,True,False,USDA ERS 2023 RUCC,2023
+18165,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18167,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18169,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18171,3.0,Metro: <250K,True,False,USDA ERS 2023 RUCC,2023
+18173,2.0,Metro: 250K–1M,True,False,USDA ERS 2023 RUCC,2023
+18175,1.0,Metro: 1M+ population,True,False,USDA ERS 2023 RUCC,2023
+18177,5.0,"Nonmetro: Urban 20K+, not adj",False,False,USDA ERS 2023 RUCC,2023
+18179,2.0,Metro: 250K–1M,True,False,USDA ERS 2023 RUCC,2023
+18181,6.0,"Nonmetro: Urban 2.5K–20K, adj",False,False,USDA ERS 2023 RUCC,2023
+18183,2.0,Metro: 250K–1M,True,False,USDA ERS 2023 RUCC,2023

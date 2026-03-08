@@ -1,0 +1,57 @@
+{
+  "build_timestamp": "2026-03-08T19:26:07.568938+00:00",
+  "county_count": 92,
+  "columns": [
+    "fips",
+    "county_name",
+    "total_population",
+    "median_household_income",
+    "median_home_value",
+    "poverty_rate",
+    "lfp_rate",
+    "bachelors_rate",
+    "civilian_labor_force",
+    "unemployment_rate",
+    "labor_force",
+    "employment",
+    "unemployment_level",
+    "rucc_code",
+    "rucc_label",
+    "is_metro",
+    "is_rural",
+    "last_updated"
+  ],
+  "sources": {
+    "census_acs": {
+      "description": "U.S. Census Bureau, ACS 5-Year Estimates 2022",
+      "url": "https://api.census.gov/data/2022/acs/acs5",
+      "variables": [
+        "median_household_income",
+        "poverty_rate",
+        "lfp_rate",
+        "bachelors_rate",
+        "total_population"
+      ]
+    },
+    "bls_laus": {
+      "description": "BLS Local Area Unemployment Statistics, 2023 Annual Average",
+      "url": "https://www.bls.gov/lau/",
+      "variables": [
+        "unemployment_rate",
+        "labor_force",
+        "employment"
+      ]
+    },
+    "usda_ers": {
+      "description": "USDA ERS Rural-Urban Continuum Codes 2023",
+      "url": "https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/",
+      "variables": [
+        "rucc_code",
+        "rucc_label",
+        "is_metro",
+        "is_rural"
+      ]
+    }
+  },
+  "methodology": "County-level indicators merged on 5-digit FIPS code. BLS LAUS unemployment rate preferred over ACS estimate where both available. Census ACS 5-year estimates cover 2018\u20132022 rolling period. Missing values encoded as null/NaN; no imputation applied."
+}

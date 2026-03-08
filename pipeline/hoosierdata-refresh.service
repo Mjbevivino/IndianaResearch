@@ -1,0 +1,31 @@
+# /etc/systemd/system/hoosierdata-refresh.service
+# Runs the pipeline weekly to refresh county data
+
+[Unit]
+Description=HoosierDataLab — Refresh Pipeline Data
+After=network.target
+
+[Service]
+Type=oneshot
+User=YOUR_USER
+WorkingDirectory=/home/YOUR_USER/hoosier-data-lab
+Environment="CENSUS_API_KEY=your_key_here"
+Environment="BLS_API_KEY=your_key_here"
+ExecStart=/usr/bin/python3 pipeline/build_dataset.py --force
+StandardOutput=journal
+StandardError=journal
+
+---
+
+# /etc/systemd/system/hoosierdata-refresh.timer
+
+[Unit]
+Description=HoosierDataLab weekly data refresh
+Requires=hoosierdata-refresh.service
+
+[Timer]
+OnCalendar=Mon *-*-* 03:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

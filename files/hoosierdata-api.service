@@ -1,0 +1,23 @@
+# /etc/systemd/system/hoosierdata-api.service
+# Install: sudo cp systemd/hoosierdata-api.service /etc/systemd/system/
+#          sudo systemctl daemon-reload
+#          sudo systemctl enable hoosierdata-api
+#          sudo systemctl start hoosierdata-api
+
+[Unit]
+Description=HoosierDataLab FastAPI Backend
+After=network.target
+
+[Service]
+Type=simple
+User=YOUR_USER
+WorkingDirectory=/home/YOUR_USER/hoosier-data-lab
+Environment="PATH=/home/YOUR_USER/.local/bin:/usr/bin:/bin"
+Environment="CENSUS_API_KEY=your_key_here"
+Environment="BLS_API_KEY=your_key_here"
+ExecStart=/home/YOUR_USER/.local/bin/uvicorn api.main:app --host 127.0.0.1 --port 8000
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

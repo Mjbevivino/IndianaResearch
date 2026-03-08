@@ -1,32 +1,31 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
+
+const BASE = import.meta.env.BASE_URL;
 
 export function useData() {
-  const [counties, setCounties]     = useState([])
-  const [indicators, setIndicators] = useState([])
-  const [summary, setSummary]       = useState({})
-  const [loading, setLoading]       = useState(true)
-  const [error, setError]           = useState(null)
+  const [counties, setCounties] = useState([]);
+  const [indicators, setIndicators] = useState([]);
+  const [summary, setSummary] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    async function load() {
-      try {
-        const [cRes, iRes, sRes] = await Promise.all([
-          fetch('/data/counties.json'),
-          fetch('/data/indicators.json'),
-          fetch('/data/summary.json'),
-        ])
-        const [c, i, s] = await Promise.all([cRes.json(), iRes.json(), sRes.json()])
-        setCounties(c)
-        setIndicators(i)
-        setSummary(s)
-      } catch (err) {
-        setError(err.message)
-      } finally {
-        setLoading(false)
-      }
-    }
-    load()
-  }, [])
+    Promise.all([
+      fetch(`${BASE}data/counties.json`).then(r => r.json()),
+      fetch(`${BASE}data/indicators.json`).then(r => r.json()),
+      fetch(`${BASE}data/summary.json`).then(r => r.json()),
+    ])
+      .then(([c, i, s]) => {
+        setCounties(c);
+        setIndicators(i);
+        setSummary(s);
+        setLoading(false);
+      })
+      .catch(e => {
+        setError(e.message);
+        setLoading(false);
+      });
+  }, []);
 
-  return { counties, indicators, summary, loading, error }
+  return { counties, indicators, summary, loading, error };
 }

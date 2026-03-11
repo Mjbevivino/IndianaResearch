@@ -4,6 +4,7 @@ import Map from './components/Map'
 import LeftPanel from './components/LeftPanel'
 import RightPanel from './components/RightPanel'
 import HealthDashboard from './components/HealthDashboard'
+import CrimeDashboard from './components/CrimeDashboard'
 
 export default function App() {
   const { counties, indicators, summary, loading, error } = useData()
@@ -15,6 +16,12 @@ export default function App() {
     setSelectedCounty(prev => prev?.fips === county.fips ? null : county)
   }
 
+  const NAV = [
+    { id: 'economics', label: 'Economics' },
+    { id: 'health',    label: 'Health & Addiction' },
+    { id: 'crime',     label: 'Crime' },
+  ]
+
   return (
     <>
       <header className="header">
@@ -23,10 +30,7 @@ export default function App() {
           <div className="header-logo-tag">Indiana · 92 Counties</div>
         </div>
         <nav style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
-          {[
-            { id: 'economics', label: 'Economics' },
-            { id: 'health',    label: 'Health & Addiction' },
-          ].map(p => (
+          {NAV.map(p => (
             <button
               key={p.id}
               onClick={() => setPage(p.id)}
@@ -53,22 +57,18 @@ export default function App() {
             <span className="status-dot" />
             {loading ? 'Loading...' : error ? 'Error' : `${counties.length} counties`}
           </span>
-          <span>Census · BLS · CHR 2024</span>
+          <span>Census · BLS · CHR · NIBRS</span>
           <a href="https://github.com/Mjbevivino/IndianaResearch" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
       </header>
 
       {page === 'health' && <HealthDashboard />}
+      {page === 'crime'  && <CrimeDashboard />}
 
       {page === 'economics' && (
         <div className="layout">
           {!loading && !error && (
-            <LeftPanel
-              indicators={indicators}
-              summary={summary}
-              activeIndicator={activeIndicator}
-              onIndicatorChange={setActiveIndicator}
-            />
+            <LeftPanel indicators={indicators} summary={summary} activeIndicator={activeIndicator} onIndicatorChange={setActiveIndicator} />
           )}
           <main className="map-area">
             <div className="map-toolbar">
@@ -87,22 +87,12 @@ export default function App() {
               {loading && <div className="map-loading"><div className="spinner" /><div className="map-loading-text">Loading county data...</div></div>}
               {error && <div className="map-loading"><div style={{ color: 'var(--red-accent)', fontSize: '0.8rem', textAlign: 'center' }}><strong>Error loading data</strong><br />{error}</div></div>}
               {!loading && !error && (
-                <Map
-                  counties={counties}
-                  indicator={activeIndicator}
-                  selectedFips={selectedCounty?.fips}
-                  onCountyClick={handleCountyClick}
-                  onCountyHover={() => {}}
-                />
+                <Map counties={counties} indicator={activeIndicator} selectedFips={selectedCounty?.fips} onCountyClick={handleCountyClick} onCountyHover={() => {}} />
               )}
             </div>
           </main>
           {!loading && !error && (
-            <RightPanel
-              county={selectedCounty}
-              counties={counties}
-              activeIndicator={activeIndicator}
-            />
+            <RightPanel county={selectedCounty} counties={counties} activeIndicator={activeIndicator} />
           )}
         </div>
       )}

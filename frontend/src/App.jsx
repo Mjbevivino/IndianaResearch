@@ -5,6 +5,7 @@ import LeftPanel from './components/LeftPanel'
 import RightPanel from './components/RightPanel'
 import HealthDashboard from './components/HealthDashboard'
 import CrimeDashboard from './components/CrimeDashboard'
+import EducationDashboard from './components/EducationDashboard'
 
 export default function App() {
   const { counties, indicators, summary, loading, error } = useData()
@@ -20,6 +21,7 @@ export default function App() {
     { id: 'economics', label: 'Economics' },
     { id: 'health',    label: 'Health & Addiction' },
     { id: 'crime',     label: 'Crime' },
+    { id: 'education', label: 'Education' },
   ]
 
   return (
@@ -64,6 +66,7 @@ export default function App() {
 
       {page === 'health' && <HealthDashboard />}
       {page === 'crime'  && <CrimeDashboard />}
+      {page === 'education' && <EducationDashboard />}
 
       {page === 'economics' && (
         <div className="layout">

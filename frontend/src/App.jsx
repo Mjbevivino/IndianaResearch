@@ -8,6 +8,7 @@ import CrimeDashboard from './components/CrimeDashboard'
 import EducationDashboard from './components/EducationDashboard'
 import IndustryDashboard from './components/IndustryDashboard'
 import HousingDashboard from './components/HousingDashboard'
+import DemographicsDashboard from './components/DemographicsDashboard'
 
 export default function App() {
   const { counties, indicators, summary, loading, error } = useData()
@@ -22,7 +23,8 @@ export default function App() {
   const NAV = [
     { id: 'economics', label: 'Economics' },
     { id: 'industry',  label: 'Industry & Labor' },
-    { id: 'housing',   label: 'Housing' },
+    { id: 'housing',      label: 'Housing' },
+    { id: 'demographics', label: 'Demographics' },
     { id: 'health',    label: 'Health' },
     { id: 'crime',     label: 'Crime' },
     { id: 'education', label: 'Education' },
@@ -72,7 +74,8 @@ export default function App() {
       {page === 'crime'  && <CrimeDashboard />}
       {page === 'education' && <EducationDashboard />}
       {page === 'industry'  && <IndustryDashboard />}
-      {page === 'housing'   && <HousingDashboard />}
+      {page === 'housing'      && <HousingDashboard />}
+      {page === 'demographics' && <DemographicsDashboard />}
 
       {page === 'economics' && (
         <div className="layout">

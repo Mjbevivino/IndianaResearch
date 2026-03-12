@@ -6,6 +6,7 @@ import RightPanel from './components/RightPanel'
 import HealthDashboard from './components/HealthDashboard'
 import CrimeDashboard from './components/CrimeDashboard'
 import EducationDashboard from './components/EducationDashboard'
+import IndustryDashboard from './components/IndustryDashboard'
 
 export default function App() {
   const { counties, indicators, summary, loading, error } = useData()
@@ -19,7 +20,8 @@ export default function App() {
 
   const NAV = [
     { id: 'economics', label: 'Economics' },
-    { id: 'health',    label: 'Health & Addiction' },
+    { id: 'industry',  label: 'Industry & Labor' },
+    { id: 'health',    label: 'Health' },
     { id: 'crime',     label: 'Crime' },
     { id: 'education', label: 'Education' },
   ]
@@ -67,6 +69,7 @@ export default function App() {
       {page === 'health' && <HealthDashboard />}
       {page === 'crime'  && <CrimeDashboard />}
       {page === 'education' && <EducationDashboard />}
+      {page === 'industry'  && <IndustryDashboard />}
 
       {page === 'economics' && (
         <div className="layout">

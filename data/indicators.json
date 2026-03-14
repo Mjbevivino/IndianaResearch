@@ -1,0 +1,9 @@
+[
+  {"key":"median_household_income","label":"Median Household Income","format":"currency","source":"Census ACS 2022","description":"Median household income in the past 12 months (inflation-adjusted). Source: ACS 5-Year Estimates 2018–2022, table B19013."},
+  {"key":"poverty_rate","label":"Poverty Rate","format":"percent","source":"Census ACS 2022","description":"Percentage of population below the federal poverty line. Source: ACS 5-Year Estimates 2018–2022, table B17001."},
+  {"key":"unemployment_rate","label":"Unemployment Rate","format":"percent","source":"BLS LAUS 2023","description":"Annual average unemployment rate for 2023. Source: Bureau of Labor Statistics Local Area Unemployment Statistics."},
+  {"key":"lfp_rate","label":"Labor Force Participation","format":"percent","source":"Census ACS 2022","description":"Percentage of the civilian noninstitutional population 16+ in the labor force. Source: ACS 5-Year Estimates, table B23025."},
+  {"key":"bachelors_rate","label":"Bachelor's Degree or Higher","format":"percent","source":"Census ACS 2022","description":"Percentage of adults 25+ with a bachelor's degree or higher. Source: ACS 5-Year Estimates, table B15003."},
+  {"key":"median_home_value","label":"Median Home Value","format":"currency","source":"Census ACS 2022","description":"Median value of owner-occupied housing units. Source: ACS 5-Year Estimates, table B25077."},
+  {"key":"total_population","label":"Total Population","format":"number","source":"Census ACS 2022","description":"Total county population. Source: ACS 5-Year Estimates, table B01003."}
+]
